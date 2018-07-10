@@ -43,6 +43,13 @@ nav ul li {
 	margin: 10px;
 }
 
+.cookie-dialog {
+	color: black;
+	background-color: white;
+	font-size: 15px;
+	padding: 10px;
+}
+
 .flat-button {
 	border: 1px solid white;
 	margin: 0px auto;
@@ -54,9 +61,8 @@ nav ul li {
 }
 
 .github-link {
-	margin: 40px auto;
+	margin: 20px auto;
 	width: 200px;
-	font-size: 20px;
 }
 
 .github-link a {
