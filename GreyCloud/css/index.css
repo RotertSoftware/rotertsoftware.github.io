@@ -378,7 +378,7 @@ footer
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
 	#img-dashboard {
 		display: none;
 	}
