@@ -97,9 +97,28 @@ $(document).ready(function(){initNavTree('namespace_grey_cloud_1_1urls.html','')
 Variables</h2></td></tr>
 <tr class="memitem:ac98080451930c641f5eab26714ce09c6"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><b>urlpatterns</b></td></tr>
 <tr class="separator:ac98080451930c641f5eab26714ce09c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2679bf8bbe191391b0fb29798d7d51b5"><td class="memItemLeft" align="right" valign="top"><a id="a2679bf8bbe191391b0fb29798d7d51b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>installed_plugins</b> = conf.getObjectFromJSON(settings.Installed_Plugins_file)</td></tr>
+<tr class="separator:a2679bf8bbe191391b0fb29798d7d51b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0849346813ceed15ee19b931d13266f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>url_prefix</b></td></tr>
+<tr class="separator:a0849346813ceed15ee19b931d13266f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">Definition of urls for GreyCloud project.</pre> </div><h2 class="groupheader">Variable Documentation</h2>
+<a id="a0849346813ceed15ee19b931d13266f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0849346813ceed15ee19b931d13266f5">&#9670;&nbsp;</a></span>url_prefix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GreyCloud.urls.url_prefix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  conf.getObjectFromJSON(os.path.join(</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;        settings.PROJECT_ROOT, plugin, <span class="stringliteral">&quot;app.json&quot;</span>))[<span class="stringliteral">&quot;url_prefix&quot;</span>]</div></div><!-- fragment -->
+</div>
+</div>
 <a id="ac98080451930c641f5eab26714ce09c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac98080451930c641f5eab26714ce09c6">&#9670;&nbsp;</a></span>urlpatterns</h2>
 
@@ -111,7 +130,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  [</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    url(<span class="stringliteral">r&#39;^$&#39;</span>, home, name=<span class="stringliteral">&quot;home&quot;</span>),</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    url(<span class="stringliteral">r&quot;^home$&quot;</span>, home),</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    url(<span class="stringliteral">r&quot;^login$&quot;</span>, login, name=<span class="stringliteral">&quot;login&quot;</span>),</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    url(<span class="stringliteral">r&quot;^logout$&quot;</span>, logout, name=<span class="stringliteral">&quot;logout&quot;</span>),</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    url(<span class="stringliteral">r&#39;^administration/&#39;</span>, include(<span class="stringliteral">&#39;administration.urls&#39;</span>, namespace=<span class="stringliteral">&#39;administration&#39;</span>)),</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    url(<span class="stringliteral">r&#39;^databases/&#39;</span>, include(<span class="stringliteral">&#39;databases.urls&#39;</span>, namespace=<span class="stringliteral">&#39;databases&#39;</span>)),</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    url(<span class="stringliteral">r&#39;^filemanagement/&#39;</span>, include(<span class="stringliteral">&#39;filemanagement.urls&#39;</span>, namespace=<span class="stringliteral">&#39;filemanagement&#39;</span>)),</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    url(<span class="stringliteral">r&quot;^services/&quot;</span>, include(<span class="stringliteral">&quot;services.urls&quot;</span>, namespace=<span class="stringliteral">&quot;services&quot;</span>))</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;]</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  [</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    url(<span class="stringliteral">r&#39;^$&#39;</span>, home, name=<span class="stringliteral">&quot;home&quot;</span>),</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    url(<span class="stringliteral">r&quot;^home$&quot;</span>, home),</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    url(<span class="stringliteral">r&quot;^auth/&quot;</span>, include(<span class="stringliteral">&quot;gc_auth.urls&quot;</span>, namespace=<span class="stringliteral">&quot;auth&quot;</span>)),</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    url(<span class="stringliteral">r&#39;^databases/&#39;</span>, include(<span class="stringliteral">&#39;gc_databases.urls&#39;</span>, namespace=<span class="stringliteral">&#39;databases&#39;</span>)),</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    url(<span class="stringliteral">r&quot;^services/&quot;</span>, include(<span class="stringliteral">&quot;gc_services.urls&quot;</span>, namespace=<span class="stringliteral">&quot;services&quot;</span>)),</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    url(<span class="stringliteral">r&#39;^filemanagement/&#39;</span>, include(<span class="stringliteral">&#39;gc_filemanagement.urls&#39;</span>, namespace=<span class="stringliteral">&#39;filemanagement&#39;</span>)),</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    url(<span class="stringliteral">r&quot;^serverlog/&quot;</span>, include(<span class="stringliteral">&quot;gc_serverlog.urls&quot;</span>, namespace=<span class="stringliteral">&quot;serverlog&quot;</span>))</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;]</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

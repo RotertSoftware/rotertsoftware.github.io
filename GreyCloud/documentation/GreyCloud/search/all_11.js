@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['validate_5fname',['validate_name',['../namespace_grey_cloud_1_1filemanagement_1_1filemanager.html#ab6e3de497d834c822a5f4cf161972406',1,'GreyCloud::filemanagement::filemanager']]],
-  ['validate_5fpath',['validate_path',['../namespace_grey_cloud_1_1filemanagement_1_1filemanager.html#a2730656558df57491de39e942bea7545',1,'GreyCloud::filemanagement::filemanager']]],
-  ['virtualfile',['VirtualFile',['../class_grey_cloud_1_1filemanagement_1_1filemanager_1_1_virtual_file.html',1,'GreyCloud::filemanagement::filemanager']]]
+  ['write',['write',['../classgc__filemanagement_1_1controler_1_1_virtual_file.html#a40f03228ced00f72db28278c4e1f5e60',1,'gc_filemanagement::controler::VirtualFile']]],
+  ['writelines',['writelines',['../classgc__filemanagement_1_1controler_1_1_virtual_file.html#a361089236a691a7193d3f4bc264cdd08',1,'gc_filemanagement::controler::VirtualFile']]]
 ];

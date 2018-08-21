@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['users',['users',['../namespace_grey_cloud_1_1administration_1_1views.html#ad1f1f37ee6cbe52b418c6d351b786975',1,'GreyCloud::administration::views']]]
+  ['validate_5fname',['validate_name',['../namespacegc__filemanagement_1_1controler.html#a5119e406c1093077fb563d031dc5cd3a',1,'gc_filemanagement::controler']]],
+  ['validate_5fpath',['validate_path',['../namespacegc__filemanagement_1_1controler.html#a8a733619ffae9c38a26152505869121d',1,'gc_filemanagement::controler']]],
+  ['virtualfile',['VirtualFile',['../classgc__filemanagement_1_1controler_1_1_virtual_file.html',1,'gc_filemanagement::controler']]]
 ];

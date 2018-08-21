@@ -1,23 +1,7 @@
 var searchData=
 [
-  ['administration',['administration',['../namespace_grey_cloud_1_1administration.html',1,'GreyCloud']]],
-  ['conf',['conf',['../namespace_grey_cloud_1_1conf.html',1,'GreyCloud.conf'],['../namespace_grey_cloud_1_1_grey_cloud_1_1conf.html',1,'GreyCloud.GreyCloud.conf']]],
-  ['controler',['controler',['../namespace_grey_cloud_1_1administration_1_1controler.html',1,'GreyCloud::administration']]],
-  ['data_5fmanagement',['data_management',['../namespace_grey_cloud_1_1data__management.html',1,'GreyCloud']]],
-  ['databases',['databases',['../namespace_grey_cloud_1_1databases.html',1,'GreyCloud']]],
-  ['filemanagement',['filemanagement',['../namespace_grey_cloud_1_1filemanagement.html',1,'GreyCloud']]],
-  ['filemanager',['filemanager',['../namespace_grey_cloud_1_1filemanagement_1_1filemanager.html',1,'GreyCloud::filemanagement']]],
-  ['greycloud',['GreyCloud',['../namespace_grey_cloud.html',1,'GreyCloud'],['../namespace_grey_cloud_1_1_grey_cloud.html',1,'GreyCloud.GreyCloud']]],
-  ['manage',['manage',['../namespace_grey_cloud_1_1manage.html',1,'GreyCloud']]],
-  ['models',['models',['../namespace_grey_cloud_1_1administration_1_1models.html',1,'GreyCloud.administration.models'],['../namespace_grey_cloud_1_1filemanagement_1_1models.html',1,'GreyCloud.filemanagement.models']]],
-  ['service_5fapi',['service_api',['../namespace_grey_cloud_1_1services_1_1service__api.html',1,'GreyCloud::services']]],
-  ['service_5fxml',['service_XML',['../namespace_grey_cloud_1_1data__management_1_1service___x_m_l.html',1,'GreyCloud::data_management']]],
-  ['services',['services',['../namespace_grey_cloud_1_1services.html',1,'GreyCloud']]],
-  ['settings',['settings',['../namespace_grey_cloud_1_1_grey_cloud_1_1settings.html',1,'GreyCloud.GreyCloud.settings'],['../namespace_grey_cloud_1_1settings.html',1,'GreyCloud.settings']]],
-  ['setup',['setup',['../namespace_grey_cloud_1_1setup.html',1,'GreyCloud']]],
-  ['sql',['SQL',['../namespace_grey_cloud_1_1data__management_1_1_s_q_l.html',1,'GreyCloud::data_management']]],
-  ['tests',['tests',['../namespace_grey_cloud_1_1data__management_1_1tests.html',1,'GreyCloud::data_management']]],
-  ['urls',['urls',['../namespace_grey_cloud_1_1administration_1_1urls.html',1,'GreyCloud.administration.urls'],['../namespace_grey_cloud_1_1databases_1_1urls.html',1,'GreyCloud.databases.urls'],['../namespace_grey_cloud_1_1filemanagement_1_1urls.html',1,'GreyCloud.filemanagement.urls'],['../namespace_grey_cloud_1_1_grey_cloud_1_1urls.html',1,'GreyCloud.GreyCloud.urls'],['../namespace_grey_cloud_1_1services_1_1urls.html',1,'GreyCloud.services.urls'],['../namespace_grey_cloud_1_1urls.html',1,'GreyCloud.urls']]],
-  ['views',['views',['../namespace_grey_cloud_1_1administration_1_1views.html',1,'GreyCloud.administration.views'],['../namespace_grey_cloud_1_1databases_1_1views.html',1,'GreyCloud.databases.views'],['../namespace_grey_cloud_1_1filemanagement_1_1views.html',1,'GreyCloud.filemanagement.views'],['../namespace_grey_cloud_1_1services_1_1views.html',1,'GreyCloud.services.views']]],
-  ['wsgi',['wsgi',['../namespace_grey_cloud_1_1_grey_cloud_1_1wsgi.html',1,'GreyCloud.GreyCloud.wsgi'],['../namespace_grey_cloud_1_1wsgi.html',1,'GreyCloud.wsgi']]]
+  ['data_5fmanagement',['data_management',['../namespacedata__management.html',1,'']]],
+  ['service_5fxml',['service_XML',['../namespacedata__management_1_1service___x_m_l.html',1,'data_management']]],
+  ['sql',['SQL',['../namespacedata__management_1_1_s_q_l.html',1,'data_management']]],
+  ['tests',['tests',['../namespacedata__management_1_1tests.html',1,'data_management']]]
 ];

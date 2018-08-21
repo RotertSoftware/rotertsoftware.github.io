@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['load_5fservice',['load_service',['../namespace_grey_cloud_1_1services_1_1service__api.html#a0b43153211a337e8804e74e1517cf650',1,'GreyCloud::services::service_api']]],
-  ['login',['login',['../namespace_grey_cloud_1_1administration_1_1views.html#aca59bc77367dd12df674a556d8381fd8',1,'GreyCloud::administration::views']]],
-  ['logout',['logout',['../namespace_grey_cloud_1_1administration_1_1views.html#ae5d8cb20888847e1279c462e9dd1a44c',1,'GreyCloud::administration::views']]]
+  ['makemigrations',['makemigrations',['../namespacelauncher.html#a4ee84b6d84e87a90c64e25af1cf83587',1,'launcher']]],
+  ['manage',['manage',['../namespacemanage.html',1,'']]],
+  ['metadata',['MetaData',['../classgc__core_1_1models_1_1_meta_data.html',1,'gc_core::models']]],
+  ['migrate',['migrate',['../namespacelauncher.html#a4564e64cb4de839abad47bcbed5b8947',1,'launcher']]]
 ];

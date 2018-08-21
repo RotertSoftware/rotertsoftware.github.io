@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['makemigrations',['makemigrations',['../namespace_grey_cloud_1_1setup.html#ad0b8530e26d4c6bb95ff19294671ec35',1,'GreyCloud::setup']]],
-  ['migrate',['migrate',['../namespace_grey_cloud_1_1setup.html#a369a9eff1fae8b93da874ab6537f429d',1,'GreyCloud::setup']]]
+  ['parse',['parse',['../classdata__management_1_1service___x_m_l_1_1_service_x_m_l.html#a7d2f49dcce8575a40422cbd59c4a71dc',1,'data_management::service_XML::ServiceXML']]],
+  ['public_5fmodifier',['public_modifier',['../namespacegc__services_1_1service__api.html#abd03c0fb94d0f36f4941ee1235368067',1,'gc_services::service_api']]]
 ];

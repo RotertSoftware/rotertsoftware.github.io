@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['delete',['delete',['../class_grey_cloud_1_1filemanagement_1_1filemanager_1_1_virtual_file.html#a168cd183a15c9563605bc11296942866',1,'GreyCloud::filemanagement::filemanager::VirtualFile']]],
-  ['delete_5ffile',['delete_file',['../namespace_grey_cloud_1_1filemanagement_1_1filemanager.html#a067d187cfcea27f5c13d0f1ab38b7352',1,'GreyCloud::filemanagement::filemanager']]],
-  ['delete_5ffolder',['delete_folder',['../namespace_grey_cloud_1_1filemanagement_1_1filemanager.html#a633ea71889a7ce75ca7ec562ecb54ad3',1,'GreyCloud::filemanagement::filemanager']]],
-  ['delete_5fservice',['delete_service',['../namespace_grey_cloud_1_1administration_1_1views.html#a6ee0d02e2d991e66193601ba33e33a22',1,'GreyCloud::administration::views']]],
-  ['delete_5fuser',['delete_user',['../namespace_grey_cloud_1_1administration_1_1views.html#acb6a2390324188672bf4c486240f9807',1,'GreyCloud::administration::views']]],
-  ['deletecloudservice',['deleteCloudService',['../namespace_grey_cloud_1_1administration_1_1controler.html#a98310e2bdfa5069b31fe95b7fac86bec',1,'GreyCloud::administration::controler']]]
+  ['edit_5fdatabase',['edit_database',['../namespacegc__databases_1_1views.html#a9e25aab1e1decc9f0abec5ad0913bb44',1,'gc_databases::views']]],
+  ['edit_5fuser',['edit_user',['../namespacegc__auth_1_1views.html#a006cec8db2a79712171bb29ab532d85c',1,'gc_auth::views']]],
+  ['edit_5fwebservice',['edit_webservice',['../namespacegc__services_1_1views.html#a6341143a542b184560626cb72a405e2c',1,'gc_services::views']]],
+  ['executesql',['executeSQL',['../namespacedata__management_1_1_s_q_l.html#aba89c15b8317401c3151c89c267595ab',1,'data_management::SQL']]],
+  ['executesqlfrompostorget',['executeSQLfromPOSTorGET',['../namespacegc__databases_1_1api__views.html#a137c5dc2f370c71337ed975c19362ffb',1,'gc_databases::api_views']]]
 ];

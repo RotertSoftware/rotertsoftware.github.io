@@ -111,8 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c05667edfac1f508ced66b1aae9a0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14317549850a86a5d69edcc2fe1c47ca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grey_cloud_1_1_a_p_i_1_1sql__api_1_1_s_q_l_database.html#a14317549850a86a5d69edcc2fe1c47ca">execute_sql</a> (self, sql, method=&quot;POST&quot;)</td></tr>
 <tr class="separator:a14317549850a86a5d69edcc2fe1c47ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c05667edfac1f508ced66b1aae9a0ad"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grey_cloud_1_1_a_p_i_1_1sql__api_1_1_s_q_l_database.html#a5c05667edfac1f508ced66b1aae9a0ad">__init__</a> (self, serverroot, database, capath=None, cafile=None)</td></tr>
-<tr class="separator:a5c05667edfac1f508ced66b1aae9a0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a33cd8b425df232307835bef34099e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grey_cloud_1_1_a_p_i_1_1sql__api_1_1_s_q_l_database.html#a01a33cd8b425df232307835bef34099e">__init__</a> (self, serverroot, database, capath=None, cafile=None, version=1)</td></tr>
+<tr class="separator:a01a33cd8b425df232307835bef34099e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14317549850a86a5d69edcc2fe1c47ca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grey_cloud_1_1_a_p_i_1_1sql__api_1_1_s_q_l_database.html#a14317549850a86a5d69edcc2fe1c47ca">execute_sql</a> (self, sql, method=&quot;POST&quot;)</td></tr>
 <tr class="separator:a14317549850a86a5d69edcc2fe1c47ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_grey_cloud_1_1_a_p_i_1_1base_1_1_service_base_class"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_grey_cloud_1_1_a_p_i_1_1base_1_1_service_base_class')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_grey_cloud_1_1_a_p_i_1_1base_1_1_service_base_class.html">GreyCloud.API.base.ServiceBaseClass</a></td></tr>
@@ -134,6 +134,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a733d9bc31692040df64c34f7b62c86fd"><td class="memItemLeft" align="right" valign="top"><a id="a733d9bc31692040df64c34f7b62c86fd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>database</b></td></tr>
 <tr class="separator:a733d9bc31692040df64c34f7b62c86fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b3bb88c37556313031c2581a072da1"><td class="memItemLeft" align="right" valign="top"><a id="af5b3bb88c37556313031c2581a072da1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>version</b></td></tr>
+<tr class="separator:af5b3bb88c37556313031c2581a072da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_grey_cloud_1_1_a_p_i_1_1base_1_1_service_base_class"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_grey_cloud_1_1_a_p_i_1_1base_1_1_service_base_class')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_grey_cloud_1_1_a_p_i_1_1base_1_1_service_base_class.html">GreyCloud.API.base.ServiceBaseClass</a></td></tr>
 <tr class="memitem:a44600311cd3f6bd9b6fe02f31f3231bc inherit pub_attribs_class_grey_cloud_1_1_a_p_i_1_1base_1_1_service_base_class"><td class="memItemLeft" align="right" valign="top"><a id="a44600311cd3f6bd9b6fe02f31f3231bc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>serverroot</b></td></tr>
@@ -197,8 +200,8 @@ cafile: CA file
 </pre> 
 </div>
 </div>
-<a id="a5c05667edfac1f508ced66b1aae9a0ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c05667edfac1f508ced66b1aae9a0ad">&#9670;&nbsp;</a></span>__init__() <span class="overload">[2/2]</span></h2>
+<a id="a01a33cd8b425df232307835bef34099e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01a33cd8b425df232307835bef34099e">&#9670;&nbsp;</a></span>__init__() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +234,13 @@ cafile: CA file
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cafile</em> = <code>None</code>&#160;</td>
+          <td class="paramname"><em>cafile</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>version</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -245,6 +254,7 @@ cafile: CA file
 serverroot: URL to server installation. Has to have scheme http[s]://host[:port]/[path/to/GreyCloud/]
 capath: folder with CA files
 cafile: CA file
+version: API version
 </pre> 
 </div>
 </div>
