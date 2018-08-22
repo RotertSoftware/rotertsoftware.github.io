@@ -14,8 +14,23 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- font-awesome -->
 		<link rel="stylesheet" href="css/all.min.css">
+		<!-- highlight.js -->
+		<link rel="stylesheet" href="css/highlightstyles/gruvbox-dark.css">
 		<!-- custom css -->
 		<link rel="stylesheet" href="css/index.css">
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/highlight.pack.js"></script>
+		<script>
+		$(document).ready(function() {
+  			$('pre code').each(function(i, block) {
+    			hljs.highlightBlock(block);
+  			});
+		});
+		</script>
 
 	</head>
 	<body>
@@ -39,9 +54,10 @@
 					<ul class="nav navbar-nav navbar-right text-uppercase">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#feature">Features</a></li>
-						<li><a href="#pricing">Pricing</a></li>
-						<li><a href="#download">Download</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#socialmedia">Social media</a></li>
+						<li><a href="https://www.github.com/RotertSoftware/GreyCloud/releases">Download</a></li>
+						<li><a href="privacy.html">Privacy</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -53,11 +69,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-1"></div>
-						<div class="col-md-10 wow fadeInUp" data-wow-delay="1.2s">
+						<div class="col-md-10 wow fadeInDownBig" data-wow-delay="1.2s">
 							<h1 class="text-upper">GreyCloud - Your solution for Your services</h1>
 							<p class="tm-white">Start into cloud computing: Install GreyCloud on your local machine
-								and develop cloud applications- free and open source</p><br/><br/><br>
-							<p><a class="btn-download" href="https://www.github.com/RotertSoftware/GreyCloud/releases"><i class="fa fa-download"></i> Download &gt;&gt;</a></p>
+								and develop cloud driven applications- free and open source</p><br/><br/><br>
+							<p><a class="btn-download" href="https://www.github.com/RotertSoftware/GreyCloud/releases"><i class="fa fa-download"></i> Download</a></p>
 							<p>
 								<img alt="GreyCloud latest release" src="https://img.shields.io/github/release/RotertSoftware/GreyCloud.svg?colorB=brightgreen" />
 								&nbsp;&nbsp;<a href="https://www.github.com/RotertSoftware/GreyCloud/stargazers"><img alt="GreyCloud latest release" src="https://img.shields.io/github/stars/RotertSoftware/GreyCloud.svg?style=social" /></a>
@@ -88,7 +104,7 @@
 					<div class="col-md-4 wow fadeInRight templatemo-box" data-wow-delay="1.3s">
 						<i class="fa fa-plug"></i>
 						<h3 class="text-uppercase">EXTENSIBLE</h3>
-						<p>Customize GreyCloud or install plugins to extend teh software with services you need.</p>
+						<p>Customize GreyCloud or install plugins to extend the software with services you need.</p>
 					</div>
 				</div>
 			</div>
@@ -100,7 +116,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
-						<h2 class="text-uppercase">ADMINISTRATION</h2>
+						<h2 class="text-uppercase">DASHBOARD</h2>
 						<p>Manage your services and databases from an easy to maintain dashboard. Create users to administrate your server in a team.</p>
 						<p><i class="fa fa-users"></i> Manage your users</p>
 						<p><i class="fa fa-database"></i> Create SQLite and MySQL databases</p>
@@ -118,11 +134,25 @@
 		<section id="feature1">
 			<div class="container">
 				<div class="row">
-						<div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
-						<h2 class="text-uppercase">More of Your Software</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p><span><i class="fa fa-mobile"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p><i class="fa fa-code"></i>Quis autem velis reprehenderit et quis voluptate velit esse quam.</p>
+					<div class="col-md-6 wow fadeInLeftBig" data-wow-delay="0.5s">
+						<pre><code class="python">	
+from GreyCloud.API.cloud_api import Cloud
+
+server = Cloud("http://localhost:8000/")
+# Database example
+con = server.getDatabase("db_test")
+print(con.execute_sql("select * from test"))
+# Service example
+service = server.getService("service_test")
+print(service.call_function("f", (None,)))
+</code></pre>
+					</div>
+					<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+						<h2 class="text-uppercase">GREYCLOUD SDK</h2>
+						<p>Develop cloud driven applications with the GreyCloud standard development kit (SDK). Features:</p>
+						<p><span><i class="fa fa-terminal"></i></span>Command line tool for testing all GreyCloud APIs.</p><br/>
+						<p><span><i class="fa fa-code"></i>Easy and lightwight API- including code examples.</span></p>
+
 					</div>
 				</div>
 			</div>
@@ -130,16 +160,13 @@
 		<!-- end feature1 -->
 
 		<!-- start download -->
-		<section id="download">
+		<section id="socialmedia">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
-						<h2 class="text-uppercase">Download Our Software</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
-						<button class="btn btn-primary text-uppercase"><i class="fa fa-download"></i> Download</button>
-					</div>
-					<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
-						<img src="images/software-img.png" class="img-responsive" alt="feature img">
+					<div class="wow bounceInUp" data-wow-delay="1s">
+						<h2 class="text-uppercase">SOCIAL MEDIA</h2><br>
+						<p><a class="social" href="https://www.facebook.com/GreyCloud-191825188265049/"><i class="fab fa-facebook"></i><br>Follow GreyCloud on Facebook to get the latest news</a></p><br>
+						<p><a class="social" href="https://www.instagram.com/rotertsoftware/"><i class="fab fa-instagram"></i><br>Follow GreyCloud on Instagram</a></p>
 					</div>
 				</div>
 			</div>
@@ -151,16 +178,11 @@
 		<footer>
 			<div class="container">
 				<div class="row">
+					<p>This site was published by David Rotert under the GNU GPL v3</p>
 					<p>Copyright (c) 2018 David Rotert</p>
 				</div>
 			</div>
 		</footer>
 		<!-- end footer -->
-        
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/jquery.singlePageNav.min.js"></script>
-		<script src="js/custom.js"></script>
 	</body>
 </html>

@@ -13,6 +13,10 @@
 	color: #ffffff;
 }
 
+.text {
+	margin: 100px 8% 100px 8%;
+}
+
 /* start h1 group */
 h1 { 
     margin-top: 0;
@@ -30,7 +34,6 @@ img
         height: auto;
     }
 /* img */
-
 /* overlay */
 .overlay 
     {
@@ -125,10 +128,10 @@ img
 }
 .navbar-default
     {
-        background: #ffffff;
+        background-color: white;
         border: none;
         width: 100%;
-        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        box-shadow: 0px 8px 12px 0px rgba(50, 50, 50, 0.8);
         margin: 0!important;
     }
 .navbar-default .navbar-brand
@@ -139,6 +142,9 @@ img
         height: 70px;
         line-height: 35px;
     }
+.navbar-brand:hover {
+	color: #666666;
+}
 .navbar-default .nav li a
     {
         color: #666666;
@@ -163,7 +169,7 @@ img
     }
 .navbar-default .navbar-toggle .icon-bar
     {
-        background: #33CCFF;
+        background: #666666;
         border-color: transparent;
     }
 .navbar-default .navbar-toggle:hover,
@@ -180,11 +186,8 @@ img
 	text-align: center;
 	width: 100%;
 }
-#home p
-    {
-	font-weight: 400;
-	font-style: normal;
-	line-height: 2em;
+#home p {
+	font-size: 20px;
 }
 #home img
     {
@@ -213,14 +216,6 @@ img
 	background-color: white;
 	text-decoration: none;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.social {
-	display:inline-block;
-	text-align:center;
-	font-size: 25px;
-	text-decoration: none;
-	color: white;
 }
 
 .social {
@@ -304,6 +299,8 @@ img
     {
         padding-top: 60px;
         padding-bottom: 60px;
+        color: white;
+        background-color: #333333;
     }
 #feature1 p
     {
@@ -315,7 +312,7 @@ img
     }
 #feature1 .fa
     {
-        color: #666666;
+        color: white;
         display: inline-block;
         font-size: 35px;
         line-height: 40px;
@@ -325,21 +322,17 @@ img
 /* end feature1 */
 
 /* start download */
-#download
+#socialmedia
     {
         padding-top: 80px;
         padding-bottom: 80px;
+        background-color: black;
+        color: white;
+        text-align: center;
     }
-#download h2
+#soacialmedia h2
     {
         padding-bottom: 20px;
-    }
-#download .btn
-    {
-        border-radius: 0px;
-        font-weight: bold;
-        margin-top: 20px;
-        padding: 10px 40px 10px 40px;
     }
 /* end download */
 
@@ -369,12 +362,9 @@ footer
         height: auto;
         line-height: 2em;
     }
-    #feature, #download {
+    #feature, #news {
         padding-top: 20px;
         padding-bottom: 40px;
-    }
-    #contact .overlay {
-        padding-top: 40px;
     }
 }
 
