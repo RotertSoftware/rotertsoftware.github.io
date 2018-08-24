@@ -72,6 +72,8 @@
         
             <li><a class="toctree-l3" href="#dashboard">Dashboard</a></li>
         
+            <li><a class="toctree-l3" href="#creating-web-services-with-python">Creating web services with Python</a></li>
+        
         </ul>
     
 
@@ -156,7 +158,18 @@
 The built-in server is only for development! For a productive server, you can host GreyCloud on Linux with the Apache web server.</p>
 <hr />
 <h2 id="dashboard">Dashboard</h2>
-<p>You can administrate all your services from the GreyCloud dashboard. To open the Dashboard, you can click on the link "GreyCloud administration". </p>
+<p>You can administrate all your services from the GreyCloud dashboard. To open the Dashboard, you can click on the link "GreyCloud administration".</p>
+<h2 id="creating-web-services-with-python">Creating web services with Python</h2>
+<p>To create web services for GreyCloud, you first have to write a python script like this:</p>
+<pre><code class="python">@public_modifier
+def f(ignore):
+    import math
+    sinus = math.sin(20)
+    testmodule = import_module(&quot;test&quot;, &quot;/home/scripts/test.py&quot;)
+    return (&quot;Hallo&quot;, sinus, testmodule.returner(None))
+</code></pre>
+
+<p>To make a function available for the GreyCloud web service API, you need to decorate it with <code>public_modifier</code>. Note that the <code>import</code> statement has to be placed in the function to make this code snippet work. To import a script from the GreyCloud filesystem, you can use <code>import_module</code>. This function has an imaginary module name as first parameter and the path to the script as a second parameter. Imported scripts behave like normal Python scripts. After you wrote your web service, you can upload your scripts to the GreyCloud filesystem.</p>
               
             </div>
           </div>

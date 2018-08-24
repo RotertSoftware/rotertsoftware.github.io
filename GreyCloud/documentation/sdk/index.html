@@ -148,6 +148,12 @@
 <li><code>CAFILE</code>: The default for <code>-ca</code></li>
 <li><code>CAPATH</code>:The default for <code>-cap</code></li>
 </ul>
+<h3 id="greycloud-cli-sql-shell">GreyCloud cli SQL shell</h3>
+<p>The GreyCloud SQL shell allows you to send SQL queries to the database API. Note that you can only execute one query per request.</p>
+<h3 id="greycloud-cli-web-service-shell">GreyCloud cli web service shell</h3>
+<p>The web service shell allows you to call web service functions. To do that, type the function name into the prompt and press enter. Now you can enter your arguments as a Python tuple.</p>
+<h3 id="greycloud-cli-http-client">GreyCloud cli HTTP client</h3>
+<p>With the GreyCloud cli HTTP client you are able to send GET requests to any server. Type <code>cd &lt;path&gt;</code> to change the current directory in the web server. Type <code>get ./example.html?argument1=bla&amp;argument2=blub</code> for example to send a request to a html page "example" in the current directory.</p>
 <h2 id="greycloud-python-api">GreyCloud Python API</h2>
 <p>To access to GreyCloud APIs with Python, you can import the package <code>GreyCloud.API</code>. The package has the following modules:</p>
 <ul>
@@ -170,7 +176,7 @@ service = server.getService(&quot;service_test&quot;)
 print(service.call_function(&quot;f&quot;, (None,)))
 </code></pre>
 
-<p>You can find the full Python API documentation <a href="" title="../code_documentation/sdk/python/index.html">here</a>.</p>
+<p>You can find the full Python API documentation <a href="../code_documentation/sdk/python/index.html">here</a>.</p>
               
             </div>
           </div>
