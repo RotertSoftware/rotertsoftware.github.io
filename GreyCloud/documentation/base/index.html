@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>SDK - GreyCloud</title>
+  <title>GreyCloud Documentation- XXX - GreyCloud</title>
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "SDK";
-    var mkdocs_page_input_path = "sdk.md";
+    var mkdocs_page_name = "GreyCloud Documentation- XXX";
+    var mkdocs_page_input_path = "base.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -60,23 +60,9 @@
     <a class="" href="../quickstart/">Quick start</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">SDK</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#greycloud-documentation-sdk">GreyCloud Documentation- SDK</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#greycloud-command-line-tool">GreyCloud command line tool</a></li>
-        
-            <li><a class="toctree-l3" href="#greycloud-python-api">GreyCloud Python API</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../sdk/">SDK</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -121,7 +107,7 @@
     
       
     
-    <li>SDK</li>
+    <li>GreyCloud Documentation- XXX</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -131,59 +117,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="greycloud-documentation-sdk">GreyCloud Documentation- SDK</h1>
-<h2 id="greycloud-command-line-tool">GreyCloud command line tool</h2>
-<p>The GreyCloud SDK includes a command line tool for calling GreyCloud APIs. You can find the cli in the <code>python</code> folder of the SDK. The command line tool is written in Python3 and can be executed by running <code>python gccli.py [OPTIONS]</code>. The GreyCloud cli has the following options:</p>
-<ul>
-<li><code>-m</code>/<code>--mode</code>: The cli mode: "http" for a simple HTTP client, "sql" for a database shell and "service" for service calls</li>
-<li><code>-s</code>/<code>--server</code>: The URL to a GreyCloud server: Has to have scheme <code>http[s]://server:port/[path/to/GreyCloud/]</code></li>
-<li><code>-ca</code>/<code>--cafile</code>: A path to a client SSL certificate. Required if server uses HTTPS.</li>
-<li><code>-cap</code>/<code>--capath</code>: A path to a folder where client certificates are stored</li>
-<li><code>-h</code>/<code>--help</code>: Shows a help message</li>
-</ul>
-<p>You can change the default values for all options in <code>console_defaults.settings.json</code>:</p>
-<ul>
-<li><code>MODE</code>: The default for <code>-m</code></li>
-<li><code>SERVER</code>: The default for <code>-s</code></li>
-<li><code>CAFILE</code>: The default for <code>-ca</code></li>
-<li><code>CAPATH</code>:The default for <code>-cap</code></li>
-</ul>
-<h2 id="greycloud-python-api">GreyCloud Python API</h2>
-<p>To access to GreyCloud APIs with Python, you can import the package <code>GreyCloud.API</code>. The package has the following modules:</p>
-<ul>
-<li><code>base</code>: includes a basic HTTP client for GET and POST requests</li>
-<li><code>service_XML</code>: includes procedures for mapping objects to the GreyCloud Service XML Format</li>
-<li><code>service_api</code>: includes the GreyCloud service call API client</li>
-<li><code>sql_api</code>: includes the GreyCloud database API client</li>
-<li><code>cloud_api</code>: includes a client for all standard GreyCloud APIs</li>
-</ul>
-<p>Here is a code example how to use GreyCloud:</p>
-<pre><code class="python">from GreyCloud.API.cloud_api import Cloud
-
-# represents a GreyCloud server
-server = Cloud(&quot;http://localhost:8000/&quot;)
-# database example
-con = server.getDatabase(&quot;db_test&quot;)
-print(con.execute_sql(&quot;select * from test&quot;))
-# service example
-service = server.getService(&quot;service_test&quot;)
-print(service.call_function(&quot;f&quot;, (None,)))
-</code></pre>
-
-<p>You can find the full Python API documentation <a href="" title="../code_documentation/sdk/python/index.html">here</a>.</p>
+                <h1 id="greycloud-documentation-xxx">GreyCloud Documentation- XXX</h1>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../hosting/" class="btn btn-neutral float-right" title="Hosting">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../quickstart/" class="btn btn-neutral" title="Quick start"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -207,10 +145,6 @@ print(service.call_function(&quot;f&quot;, (None,)))
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../quickstart/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../hosting/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
