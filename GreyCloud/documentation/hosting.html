@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="img/favicon.ico">
   <title>Hosting - GreyCloud</title>
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
 
-  <link rel="stylesheet" href="../css/highlightstyles/rainbow.css" />
+  <link rel="stylesheet" href="css/highlightstyles/rainbow.css" />
   
   <script>
     // Current page data
@@ -22,9 +22,9 @@
     var mkdocs_page_url = null;
   </script>
   
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="../js/highlight.pack.js"></script>
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
@@ -38,9 +38,9 @@
     	<a href="../index.html"><i class="fa fa-home"></i> GreyCloud website</a><br>
     	<a href="../privacy.html">Privacy</a><br>
     	<a href="../contact.html">Contact</a><br>
-        <a href=".." class="icon icon-home"><i class="fa fa-book"></i> GreyCloud Documentation</a>
+        <a href="index.html" class="icon icon-home"><i class="fa fa-book"></i> GreyCloud Documentation</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -52,22 +52,22 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="..">Overview</a>
+    <a class="" href="index.html">Overview</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../quickstart/">Quick start</a>
+    <a class="" href="quickstart.html">Quick start</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../sdk/">SDK</a>
+    <a class="" href="sdk.html">SDK</a>
 	    </li>
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Hosting</a>
+    <a class="current" href="hosting.html">Hosting</a>
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#greycloud-documentation-hosting">GreyCloud Documentation- Hosting</a></li>
@@ -92,17 +92,17 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../greycloud_settings/">GreyCloud settings</a>
+    <a class="" href="greycloud_settings.html">GreyCloud settings</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../apis/">APIs</a>
+    <a class="" href="apis.html">APIs</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../greycloud_service_xml_format/">GreyCloud Service XML Format</a>
+    <a class="" href="greycloud_service_xml_format.html">GreyCloud Service XML Format</a>
 	    </li>
           
         </ul>
@@ -115,7 +115,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">GreyCloud Documentation</a>
+        <a href="index.html">GreyCloud Documentation</a>
       </nav>
 
       
@@ -123,7 +123,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
+    <li><a href="index.html">Docs</a> &raquo;</li>
     
       
     
@@ -143,7 +143,7 @@
 You need professional administration skills for configuring Apache and GreyCloud. If the configurations are not correct, this might cause into security issues. This tutorial gives only a basic overview of the hosting process and has no claim to completeness and correctness!</p>
 <hr />
 <h2 id="virtual-python-environment">Virtual Python environment</h2>
-<p>It is recommended to host GreyCloud in a virtual Python environement. To create virtual Python enviroments, you first need to install the 'virtualenv' package by running <code>pip install virtualenv</code>. After that, you can create a new environment with <code>virtualenv GreyCloudEnv</code>. Activate the Python interpreter with <code>source GreyCloudEnv/bin/activate</code> and install Django and mysqlclient by running <code>pip install django=2.0 mysqlclient</code>.</p>
+<p>It is recommended to host GreyCloud in a virtual Python environement. To create virtual Python enviroments, you first need to install the 'virtualenv' package by running <code>pip install virtualenv</code>. After that, you can create a new environment with <code>virtualenv GreyCloudEnv</code>. Activate the Python interpreter with <code>source GreyCloudEnv/bin/activate</code> and install Django and PyMySQL by running <code>pip install django=2.0 pymysql</code>.</p>
 <h2 id="cofigure-apache">Cofigure Apache</h2>
 <p>To host GreyCloud on the Apache web server, you have to install mod_wsgi. On Debian based systems like Ubuntu, you can install mod_wsgi with <code>sudo apt-get install libapache2-mod-wsgi-py3</code>. After that, you have to enable mod_wsgi by running <code>sudo a2enmod wsgi</code> in your terminal. Create a new <code>&lt;site&gt;.conf</code> file in <code>/etc/apache2/sites-available</code> with the following content (replace '...' with other settings):</p>
 <pre><code class="apache">&lt;VirtualHost myhost.com:8080&gt;
@@ -165,7 +165,7 @@ You need professional administration skills for configuring Apache and GreyCloud
 
 <p>If you want to use GreyCloud on an other port than 80, you have to add <code>Listen &lt;your port number&gt;</code> to <code>/etc/apache2/ports.conf</code>. Enable your vittual host file by running <code>sudo a2ensite &lt;site&gt;.conf</code> in a terminal.</p>
 <h2 id="configure-greycloud">Configure GreyCloud</h2>
-<p>Download the GreyCloud server .zip or .tar file and unpack the archive into your Apache server root (normally <code>/var/www/html</code>). Rename the GreyCloud server folder into "GreyCloud". Open <code>GreyCloud/app_data/conf/usersettings.conf</code> in a text editor. Set <code>DEBUG</code> to false, <code>PYTHON_VERSION</code> to your Python virtual environment version, <code>VENV_ROOT</code> to your virtual environment path. Read more about GreyCloud settings <a href="../greycloud_settings/">here</a>.</p>
+<p>Download the GreyCloud server .zip or .tar file and unpack the archive into your Apache server root (normally <code>/var/www/html</code>). Rename the GreyCloud server folder into "GreyCloud". Open <code>GreyCloud/app_data/conf/usersettings.conf</code> in a text editor. Set <code>DEBUG</code> to false, <code>PYTHON_VERSION</code> to your Python virtual environment version, <code>VENV_ROOT</code> to your virtual environment path. Read more about GreyCloud settings <a href="greycloud_settings.html">here</a>.</p>
 <h2 id="set-up-database">Set up database</h2>
 <p>Set up your database with <code>sudo python launcher.py install</code>.</p>
 <h2 id="change-permissions">Change permissions</h2>
@@ -177,10 +177,10 @@ You need professional administration skills for configuring Apache and GreyCloud
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../greycloud_settings/" class="btn btn-neutral float-right" title="GreyCloud settings">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="greycloud_settings.html" class="btn btn-neutral float-right" title="GreyCloud settings">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../sdk/" class="btn btn-neutral" title="SDK"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="sdk.html" class="btn btn-neutral" title="SDK"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -206,16 +206,16 @@ You need professional administration skills for configuring Apache and GreyCloud
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../sdk/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="sdk.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../greycloud_settings/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="greycloud_settings.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
 
 </body>
 </html>
