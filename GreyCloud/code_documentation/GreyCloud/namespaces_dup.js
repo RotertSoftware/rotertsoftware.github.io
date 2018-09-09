@@ -15,10 +15,6 @@ var namespaces_dup =
       [ "urls", "namespacegc__databases_1_1urls.html", null ],
       [ "views", "namespacegc__databases_1_1views.html", null ]
     ] ],
-    [ "gc_examples", null, [
-      [ "urls", "namespacegc__examples_1_1urls.html", null ],
-      [ "views", "namespacegc__examples_1_1views.html", null ]
-    ] ],
     [ "gc_filemanagement", null, [
       [ "controler", "namespacegc__filemanagement_1_1controler.html", null ],
       [ "models", "namespacegc__filemanagement_1_1models.html", null ],

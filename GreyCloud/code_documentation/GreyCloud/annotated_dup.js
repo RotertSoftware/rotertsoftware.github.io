@@ -33,7 +33,6 @@ var annotated_dup =
       [ "models", "namespacegc__core_1_1models.html", "namespacegc__core_1_1models" ]
     ] ],
     [ "gc_databases", null, null ],
-    [ "gc_examples", null, null ],
     [ "gc_filemanagement", null, [
       [ "controler", "namespacegc__filemanagement_1_1controler.html", "namespacegc__filemanagement_1_1controler" ],
       [ "models", "namespacegc__filemanagement_1_1models.html", "namespacegc__filemanagement_1_1models" ]
